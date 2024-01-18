@@ -1,0 +1,84 @@
+body{
+    overflow: hidden;
+    color: white;
+    background-color: black;
+    padding: 1svw;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-items: center;
+    transition: background-color 1s ease;
+}
+h1::selection{
+    color: white;   
+}
+h4::selection{
+    color: white;
+}
+h1{
+    font-size: 4.5rem;
+    font-family: 'Abril Fatface', serif;
+}
+h2{
+    font-size: 2.2rem;
+    padding-top: 2svh;
+    font-family: 'PlayFair Display', serif;
+    font-weight: 100;
+    justify-self: center;
+    padding-left: 10svw;
+    padding-Right: 10svw;    
+    color: white;
+    text-align: center;
+    cursor: text;
+}
+
+h2::selection{
+    color: rgb(172, 172, 172);
+}
+h4{
+    font-size: 1.7rem;
+    font-family: 'Parisienne', cursive;
+    font-weight: 100;
+    justify-self: center;
+    padding-left: 10svw;
+    padding-Right: 10svw;    
+    color: rgb(255, 255, 255);
+}
+#Random{
+    height: 3rem;
+    width: 9rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    color: rgb(49, 49, 49);
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    padding: 0.1svh;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#Random:hover{
+    background-color: orange;
+    color: rgb(0, 0, 0);
+}
+
+#copy{
+    height: 3rem;
+    width: 3rem;    
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    align-self: flex-end;
+}
+#copy:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+}
+#copy > img{
+    height: 1.4rem;
+    width: 1.4rem;
+}
